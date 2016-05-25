@@ -1,23 +1,23 @@
 # CVworks
 OCR
 =====
-This OCR work is for a package recognization project.
-The aim is identify the number from the package.
-The methods used are Opencv and Random Forest.
+This OCR work is for a package recognization project.  
+The aim is identify the number from the package.  
+The methods used are Opencv and Random Forest.  
 
-There are two steps:
-1. Create the training set.
-2. Train the classifier.
-then the classifier is ready to go.
+There are two steps:  
+1. Create the training set.  
+2. Train the classifier.  
+3. Then the classifier is ready to go.
 
-It finds the contours (cv2.findContours()) from the image first, then transforms the counter to a 16*16.
-Then i set 3 features:
-1. the origanal image (worest)
-2. canny edge of the image (better)
-3. gradient of the image (little better than canny)
-Next transforms from 16*16 to 1*256, this is one sample.
-Then do this for all samples.
-The lable is a N*1 array.
+It finds the contours (cv2.findContours()) from the image first, then transforms the counter to a 16*16.  
+Then i set 3 features:  
+1. the origanal image (worest)  
+2. canny edge of the image (better)  
+3. gradient of the image (little better than canny)  
+Next transforms from 16*16 to 1*256, this is one sample.  
+Then do this for all samples.  
+The lable is a N*1 array.  
 That's all for setting the training set.
 
 Then i use sklearn to train the RandomForest with the samples and lables got before.
