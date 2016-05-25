@@ -20,12 +20,12 @@ Then do this for all samples.
 The lable is a N*1 array.  
 That's all for setting the training set.
 
-Then i use sklearn to train the RandomForest with the samples and lables got before.
-Firstly is still find the countours in the image.
-Secondly, transform the contours into 16*16 then 1*256.
-Then, do the canny and gradient(HOG).
-After that, predict three times.
+Then i use sklearn to train the RandomForest with the samples and lables got before.  
+Firstly is still find the countours in the image.  
+Secondly, transform the contours into 16*16 then 1*256.  
+Then, do the canny and gradient(HOG).  
+After that, predict three times.  
 if all three results are same, that's fine, otherwise, pick the number which shows most.
 
-That's all, this will works for images in white background and black numbers.the accurency is around 98%.(using testing set image)
+That's all, this will works for images in white background and black numbers.the accurency is around 98%.(using testing set image)  
 The bad news is it can't identify it's a number or not, it will classify all patterns.(using cnn first, and get the probability of the patterns may solve this problems.)
