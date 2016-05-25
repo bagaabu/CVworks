@@ -1,5 +1,5 @@
 # CVworks
-OCR
+OCR_RandomForest
 =====
 This OCR work is for a package recognization project.  
 The aim is identify the number from the package.  
